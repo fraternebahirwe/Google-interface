@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Fond galaxie animé */
+
+.galaxy-bg {
+    position: fixed;
+    inset: 0;
+
+    background-image: url("galxy.jpg");
+    background-size: cover;
+    background-position: center;
+
+    z-index: -1;
+
+    animation: galaxyMove 25s ease-in-out infinite;
+}
+
+/* Animation galaxie */
+
+@keyframes galaxyMove {
+
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.08) rotate(1deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.main {
+    margin-top: 120px;
+}
+
+/* Logo Google */
+
+.logo-img {
+    width: 320px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Barre de recherche */
+
+.search-input {
+    width: 450px;
+    max-width: 80%;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Boutons */
+
+.buttons {
+    margin-top: 25px;
+}
+
+.google-btn {
+    padding: 10px 16px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #f1f1f1;
+
+    margin: 0 5px;
+
+    cursor: pointer;
+}
+
+.google-btn:hover {
+    background: #dddddd;
+}
+
+/* Texte */
+
+p {
+    color: white;
+    margin-top: 30px;
+}
+
+a {
+    color: #8ecbff;
+}
