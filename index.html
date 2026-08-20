@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google.com</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Google — Search</title>
 
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="A modern, custom Google Search interface featuring a custom background." />
+  <meta name="author" content="Fraterne Bahirwe" />
+  <meta property="og:title" content="Google Search Clone" />
+  <meta property="og:description" content="Custom Google search UI experience." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon & Stylesheet -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-    <div class="galaxy-bg"></div>
+  <!-- Decorative Background -->
+  <div class="galaxy-bg" aria-hidden="true"></div>
 
-    <div class="main">
+  <!-- Main Search Container -->
+  <main class="main">
+    <form class="search-form" action="#" method="GET" role="search">
+      <img class="logo-img" src="google.jpg" alt="Google Logo" width="272" height="92" />
 
-        <img class="logo-img" src="google.jpg" alt="Google Logo">
+      <label for="search-input" class="visually-hidden">Search Google</label>
+      <input
+        id="search-input"
+        class="search-input"
+        type="search"
+        name="q"
+        placeholder="Search Google..."
+        autocomplete="off"
+        autofocus
+        required
+      />
 
-        <input
-            class="search-input"
-            type="text"
-            placeholder="Search Google..."
-        >
+      <div class="buttons">
+        <button class="google-btn" type="submit">Google Search</button>
+        <button class="google-btn" type="button">I'm Feeling Lucky</button>
+      </div>
+    </form>
 
-        <div class="buttons">
-            <button class="google-btn">Google Search</button>
-            <button class="google-btn">I'm Feeling Lucky</button>
-        </div>
-
-        <p>
-            We protect your privacy.
-            <a href="blog.html">Learn how.</a>
-        </p>
-
-    </div>
+    <p class="privacy-note">
+      We protect your privacy. <a href="blog.html">Learn how.</a>
+    </p>
+  </main>
 
 </body>
 </html>
